@@ -2,7 +2,29 @@
 	width:300px;
 	height:300px;
 	background-color:yellow;
-	border-radius:150px;
-	border:10px solid black;
+	border-radius:50%;
+	border:20px solid black;
+	box-shadow: inset 0 0 10px #0f0;
+	position:relative;
+}
+#dortmund::before{
+	content:'V\A 09';
+	position:absolute;
+	font-size:120px;
+	top:25px;
+	left:50%;
+	margin-left:-50px;
 
+}
+#dortmund::after{
+	content:"BB";
+	font-size:120px;
+	position:absolute;
+	top:20%;
+	left:20px;
+	letter-spacing:100px;
+}
+#dortmund::first-letter{
+	font-size:220px;
+	color:blue;
 }
